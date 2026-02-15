@@ -1,0 +1,225 @@
+# Cara umum membuat array
+
+# Array angka
+
+import array as arr
+
+a = arr.array('i', [1,2,3,4])
+print("Kumpulan data integer: ", end=" ")
+for i in range(0, 4):
+  print(a[i], end=" ")
+print()
+
+b = arr.array('d', [1.5,2.5,3.5,4.5])
+print("Kumpulan data float: ", end=" ")
+for i in range(0, 4):
+  print(b[i], end=" ")
+
+# Array huruf
+
+import array as arr
+
+a = arr.array('u' , ['F','i','r','e','f','l','y'])
+print(a)
+
+
+# Menambah Elemen Ke Array
+
+import array as arr
+
+a = arr.array('i', [1, 2, 3])
+print("Array sebelum ditambah :", end=" ")
+
+for i in range(0, 3):
+  print(a[i], end=" ")
+
+print()
+
+a.insert(1, 4)
+print("Array setelah ditambah :", end=" ")
+
+for i in (a):
+  print(i, end=" ")
+
+print()
+
+b = arr.array('d', [2.5, 3.2, 3.3])
+print("Array sebelum ditambah :", end=" ")
+
+for i in range(0, 3):
+  print(b[i], end=" ")
+
+print()
+
+b.append(4.4)
+print("Array setelah ditambah :", end=" ")
+
+for i in (b):
+  print(i, end=" ")
+
+print()
+
+
+# Mengakses Elemen Array
+
+import array as arr
+
+a = arr.array('i', [1, 2, 3, 4, 5, 6])
+print("Akses element is : ", a[0])
+print("Akses element is : ", a[3])
+
+b = arr.array('d', [2.5, 3.2, 3.3])
+print("Akses element is : ", b[1])
+print("Akses element is : ", b[2])
+
+
+# Menghapus Elemen Array
+
+import array
+
+arr = array.array('i', [1, 2, 3, 1, 5])
+print("The new created array is :", end=" ")
+
+for i in range(0, 5):
+  print(arr[i], end=" ")
+
+print("\r")
+print("The popped element is : ", end=" ")
+print(arr.pop(2))
+print("The array after popping is : ", end=" ")
+
+for i in range(0, 4):
+  print(arr[i], end=" ")
+print("\r")
+arr.remove(1)
+print("The array after removing is :", end=" ")
+
+for i in range(0, 3):
+  print(arr[i], end=" ")
+
+
+# Pemotongan Elemen Array
+
+import array as arr
+
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+a = arr.array('i', l)
+print("Initial Array: ")
+
+for i in (a):
+  print(i, end=" ")
+
+Sliced_array = a[3 : 8]
+print("\nSlicing elements in a range 3-8: ")
+print(Sliced_array)
+Sliced_array = a[5:]
+print("\nElements sliced from 5th"
+"element till the end: ")
+print(Sliced_array)
+
+Sliced_array = a[:]
+print("\nPrinting all elements using slice operation: ")
+print(Sliced_array)
+
+
+# Mengubah Elemen Baru
+
+import array
+
+arr = array.array('i', [1, 2, 3, 1, 2, 5])
+print("Array before updation", end=" ")
+
+for i in range(0, 6):
+  print(arr[i], end=" ")
+print("\r")
+arr[2] = 6
+print("Array after updation:", end=" ")
+
+for i in range(0, 6):
+  print(arr[i], end=" ")
+print()
+arr[4] = 8
+print("Array after updation :", end=" ")
+
+for i in range(0, 6):
+  print(arr[i], end=" ")
+
+
+# Berbagai Operasi Array
+
+import array
+
+my_array = array.array('i', [1, 2, 3, 4, 2, 5, 2])
+
+# Menghitung elemen array
+count = my_array.count(2)
+print("Number of occurrences of 2 :", count)
+
+import array
+
+my_array = array.array('i', [1, 2, 3, 4, 2, 5, 2])
+
+# Menghitung elemen array
+count = my_array.count(2)
+print("Number of occurrences of 2 :", count)
+
+# Membalik Elemen Array
+print("Original array :", *my_array)
+my_array.reverse()
+print("Reversed array : ", *my_array)
+
+
+# Extend Dalam Array
+
+import array as arr
+a = arr.array('i', [1, 2, 3, 4, 5])
+print("The before array extend :", end =" ")
+
+for i in range (0, 5):
+  print (a[i], end =" ")
+
+print()
+
+a.extend([6, 7, 8 , 9, 10])
+print("\nThe array after extend", end=" ")
+
+for i in range(0, 10):
+  print(a[i],end=" ")
+
+
+print()
+
+import array as arr
+
+a = arr.array('i', [1, 2, 3, 4, 5, 6])
+print("The Before extend array is", end=" ")
+
+for i in range(0, 6):
+  print(a[i], end=" ")
+
+print()
+
+a.extend([7, 8, 9, 10, 11, 12])
+print("\nThe After extend array is", end=" ")
+
+for i in range(0,12):
+  print(a[i], end=" ")
+
+print()
+
+b = arr.array('d', [2.1, 2.2, 2.3, 2.4, 2.5, 2.6])
+print("\nThe before extend array is", end=" ")
+
+for i in range(0, 6):
+  print(b[i], end=" ")
+
+print()
+
+b.extend([2.6, 2.7, 2.8, 2.9])
+print("\nThe after extend array is", end=" ")
+
+for i in range(0, 9+1):
+  print(b[i], end=" ")
+
+print()
